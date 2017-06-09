@@ -1,0 +1,18 @@
+$medium-grid: (
+  columns: 2,
+  gutter: 5px,
+  media: 800px,
+);
+
+.container {
+  margin: 0 auto;
+  // width: 100%;
+  @include grid-media($medium-grid) {
+    @include grid-container;
+  }
+}
+.item {
+  @include grid-media($medium-grid) {
+    @include grid-column(1);
+  }
+}
