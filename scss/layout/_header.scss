@@ -8,11 +8,11 @@ header {
   height: 50px;
 }
 
-.navbar h1 {
+.navbar.h1 {
   display: inline-block;
 
 }
 
 .nav-button {
-  display: inline-block;
+  @extend .navbar.h1;
 }

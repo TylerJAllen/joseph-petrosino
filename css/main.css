@@ -38,11 +38,7 @@ header {
   height: 50px;
 }
 
-.navbar h1 {
-  display: inline-block;
-}
-
-.nav-button {
+.navbar.h1, .nav-button {
   display: inline-block;
 }
 
