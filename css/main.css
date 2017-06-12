@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: rust;
+  src: url("../fonts/rust/rust.woff");
+}
+@font-face {
+  font-family: head;
+  src: url("../fonts/head/head.woff");
+}
 @media only screen and (min-width: 800px) {
   .container::after {
     clear: both;
@@ -23,7 +31,7 @@
 header {
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .navbar {
@@ -81,10 +89,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  color: #FEDC53;
+  text-shadow: -3px 0 #364A1D, 0 3px #364A1D, 3px 0 #364A1D, 0 -3px #364A1D;
+}
+
+h1 {
+  font-size: 13vw;
+  font-family: rust;
+}
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 115px;
+  }
 }
 
 h2 {
   display: none;
+  font-size: 5vw;
+  font-family: head;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,6 +124,9 @@ h2 {
   border-radius: 20px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.item:hover {
+  cursor: pointer;
 }
 .item:hover h2 {
   display: block;

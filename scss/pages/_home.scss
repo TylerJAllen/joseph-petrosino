@@ -5,10 +5,22 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  color: $font-color;
+  text-shadow: -3px 0 #364A1D, 0 3px #364A1D, 3px 0 #364A1D, 0 -3px #364A1D;
+}
+
+h1 {
+  font-size: 13vw;
+  font-family: rust;
+  @include grid-media($medium-grid) {
+    font-size: 115px;
+  }
 }
 
 h2 {
   display: none;
+  font-size: 5vw;
+  font-family: head;
   @include position(absolute, 50% null null 50%);
   @include transform(translate(-50%, -50%));
 }
@@ -19,8 +31,11 @@ h2 {
     border-radius: 20px;
     @include background-positioning;
   }
-  &:hover h2 {
-    display: block;
+  &:hover {
+    cursor: pointer;
+    & h2 {
+      display: block;
+    }
   }
 }
 
