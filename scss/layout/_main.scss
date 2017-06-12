@@ -1,35 +1,15 @@
-.item {
-  width: 40vw;
-  height: 40vw;
-  // width: 300px;
-  margin-bottom: 75px;
-  border: 1px solid red;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  // background-position: bottom;
-  // & .image {
-  //   width: 100%;
-  //   height: 250px;
-  //   border: 2px solid green;
-  // }
+main {
+  min-width: 250px;
+  margin-right: 40%;
+  @include grid-media ($medium-grid) {
+    margin-right: 25%;
+  }
 }
 
-#biography {
-  background-image: $biographyImage;
-}
-#family {
-  background-image: $familyImage;
-}
-#australiaZoo {
-  background-image: $zooImage;
-}
-#conservation {
-  background-image: $conservationImage;
-}
-#gallery {
-  background-image: $galleryImage;
-}
-#media {
-  background-image: $mediaImage;
+.container {
+  padding: 0 3vw;
+  margin: 0 auto;
+  @include grid-media($medium-grid) {
+    padding: 0 0;
+  }
 }

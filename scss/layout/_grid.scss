@@ -1,12 +1,10 @@
 $medium-grid: (
   columns: 2,
-  gutter: 5px,
+  gutter: 2vw,
   media: 800px,
 );
 
 .container {
-  margin: 0 auto;
-  // width: 100%;
   @include grid-media($medium-grid) {
     @include grid-container;
   }
